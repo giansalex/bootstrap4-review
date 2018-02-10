@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Boostrap</a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav> 
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1 class="display-3">Jumbo heading</h1>
+            <p class="lead">Jumbo helper text</p>
+            <hr class="my-2">
+            <p>More info <kbd>ctrl + b</kbd></p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+            </p>
+        </div>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">ab</a></li>
+            <li class="breadcrumb-item"><a href="#">dfgg</a></li>
+            <li class="breadcrumb-item active">aaaaaa</li>
+        </ol>
+        <div class="alert alert-dark fade show" role="alert">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>dark</strong> Alert
+        </div>
+        <div class="card text-white bg-danger">
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Text</p>
+          </div>
+        </div>
+        <div class="table-responsive">
+                <table class="table table-dark table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th>a1</th>
+                                <th>a2</th>
+                                <th>a3</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">1</td>
+                                    <td>abc</td>
+                                    <td>cd4 <span class="badge badge-warning">Warning</span></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">2</td>
+                                    <td>444</td>
+                                    <td>hhhh</td>
+                                </tr>
+                            </tbody>
+                    </table>
+        </div>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+        <div class="mx-auto bg-warning" style="width:150px">Centered</div>
+    </div>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip(); 
+        });
+</script>
+</body>
+</html>
