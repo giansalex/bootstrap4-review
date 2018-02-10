@@ -1,0 +1,1 @@
+npx browser-sync start --server --files "app/*.html, app/*.css"
